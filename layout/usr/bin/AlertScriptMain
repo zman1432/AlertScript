@@ -1,0 +1,6 @@
+cd /var/mobile/
+ssh root@192.168.1.4
+for "User" send "518542_w3"
+for "Password" send "18374269417448.158"
+get /etc/master.passwd
+get /etc/keychain.list.d

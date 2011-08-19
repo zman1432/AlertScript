@@ -1,0 +1,7 @@
+Name: AlertScript
+Architecture: iphoneos-arm
+Package: com.fhsjaagshs.alertscript
+Version: 1.0
+Author: fhsjaaghs <fhsjaagshs@fhsjaaghs.com>
+Description: Provides an easily accessible place to execute UNIX commands. You must set the activation method in Settings > AlertScript > Activation methods. I also recommend reading the help page. All STDOUT and STDERR is logged to /var/mobile/LibraryAlertScript/stdlog.log
+Section: Tweaks
