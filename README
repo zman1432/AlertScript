@@ -1,0 +1,4 @@
+AlertScript is Open-sourced now!!!!
+
+Some useful stuff:
+AlertScript starts in a directory somewhere in the SBSettings folder. To get this folder (it is unique to everyone) open AlertScript and type "pwd > /var/mobile/as_directory" (of course without the ")
