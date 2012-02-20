@@ -32,6 +32,7 @@
 	scriptField.scrollEnabled = YES;
 	scriptField.autocorrectionType = UITextAutocorrectionTypeNo;
 	scriptField.autocapitalizationType = UITextAutocapitalizationTypeNone;
+	scriptField.text = @"cd /var/mobile/";
 
 	[av addSubview:scriptField];
 	[av show]; 
