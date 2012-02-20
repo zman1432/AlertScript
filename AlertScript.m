@@ -7,6 +7,7 @@
 	UIAlertView *av;
 	UITextView *scriptField;
 }
+
 @end
 
 @implementation AlertScript
@@ -23,21 +24,21 @@
 
 - (void)activator:(LAActivator *)activator receiveEvent:(LAEvent *)event {
 	
-av = [[UIAlertView alloc] initWithTitle:@"AlertScript" message:@"\n\n\n\n" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Execute", nil];
+	av = [[UIAlertView alloc] initWithTitle:@"AlertScript" message:@"\n\n\n\n" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Execute", nil];
 
-scriptField = [[UITextView alloc] initWithFrame:CGRectMake(30, 40, 223, 92)];
-scriptField.delegate = self;
-scriptField.editable = YES;
-scriptField.scrollEnabled = YES;
-scriptField.autocorrectionType = UITextAutocorrectionTypeNo;
-scriptField.autocapitalizationType = UITextAutocapitalizationTypeNone;
+	scriptField = [[UITextView alloc] initWithFrame:CGRectMake(30, 40, 223, 92)];
+	scriptField.delegate = self;
+	scriptField.editable = YES;
+	scriptField.scrollEnabled = YES;
+	scriptField.autocorrectionType = UITextAutocorrectionTypeNo;
+	scriptField.autocapitalizationType = UITextAutocapitalizationTypeNone;
 
-[av addSubview:scriptField];
-[av show]; 
-[av release];
-[scriptField release];
+	[av addSubview:scriptField];
+	[av show]; 
+	[av release];
+	[scriptField release];
 
-[event setHandled:YES];
+	[event setHandled:YES];
 }
 
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
